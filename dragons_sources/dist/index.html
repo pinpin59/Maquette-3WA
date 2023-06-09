@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site avec une liste de dragons de type eau et feu">
+    <title>Dragons</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <header>
+        <h1>Dragons</h1>
+        <nav>
+            <menu>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Ajouter un dragon</a></li>
+                <li><a href="#">Les donjons</a></li>
+            </menu>
+        </nav>
+    </header>
+    
+    <main>
+        <fieldset>
+            <div class="search-container">
+                <input type="text" class="search-input" id="search-input-name" placeholder="Chercher nom Ex : Aqua">
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-input" id="search-input-type" placeholder="Chercher type Ex: feu">
+            </div>
+        </fieldset>
+        
+        <details>
+            <summary>Liste des dragons</summary>
+            Cette page contient une liste de différents dragons de type eau et feu.
+        </details>
+
+
+        <div id="section-card-container" class="section-card-container">
+            <!-- Carte des dragons créés avec le JS -->
+        </div>
+
+        <div id="modal" class="modal" aria-modal="true" role="dialog" aria-labelledby="title-modal">
+            <div class="modal-content">
+            <span class="close" >&times;</span>
+            <h2 id="title-modal">Titre de la modale</h2>
+            <p id="content-modal">Contenu de la modale...</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <ul>
+            <li class="footer-li">Lorem, ipsum dolor.</li>
+            <li class="footer-li">Lorem, ipsum dolor.</li>
+            <li class="footer-li">Lorem, ipsum dolor.</li>
+        </ul>
+    </footer>
+
+    <script src="./bundle.js"></script>
+</body>
+</html>
